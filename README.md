@@ -9,6 +9,18 @@ Including:
 * PKTimeSpan - Fast lightweight representation of a period of time
 * NSObject+PKExtension
   * performBlock:afterDelay
+* NSString+PKExtensions
+  * stringIsNilOrEmpty
+  * containsString
+  * md5Hexstring
+  * md5Data
+  * md5DataWithEncoding
+  * sha1HexString
+  * sha1Data
+  * sha1DataWithEncoding
+* NSData+PKExtension
+  * base64Encode
+  * hexString
 * NSArray+PKExtensions
   * map
   * each

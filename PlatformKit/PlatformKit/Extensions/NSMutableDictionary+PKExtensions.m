@@ -11,8 +11,7 @@
 @implementation NSMutableDictionary (PKExtensions)
 
 -(void) setObject:(id)value forKeyUnlessEitherNil:(id)key
-{
-    
+{   
     if (value && key)
     {
         [self setObject:value forKey:key];
