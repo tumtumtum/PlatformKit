@@ -7,6 +7,7 @@ Including:
 
 * PKUUID - Fast lightweight UUID
 * PKTimeSpan - Fast lightweight representation of a period of time
+* PKMulticastDelegate - C# style multicast delegates for Objective C
 * NSObject+PKExtension
   * performBlock:afterDelay
 * NSString+PKExtensions
@@ -31,7 +32,7 @@ Including:
   * map
   * select
 * NSTimer+PKExtensions
-  * timerWithTimeInterval:block:repeats
+  * timerWithTimeInterval:block:repeats  
 
 
 Copyright © 2013, Thong Nguyen (@tumtumtum)
