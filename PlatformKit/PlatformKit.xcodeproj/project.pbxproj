@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A12E4215171637B70063AACD /* PKMulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A12E4214171637B70063AACD /* PKMulticastDelegate.m */; };
+		A12E4216171637B70063AACD /* PKMulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A12E4214171637B70063AACD /* PKMulticastDelegate.m */; };
 		A1B7244A17160FC100D2F592 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B7244917160FC100D2F592 /* Foundation.framework */; };
 		A1B7245917160FC100D2F592 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B7245817160FC100D2F592 /* SenTestingKit.framework */; };
 		A1B7245C17160FC100D2F592 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B7244917160FC100D2F592 /* Foundation.framework */; };
@@ -59,6 +61,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A12E4213171637B70063AACD /* PKMulticastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKMulticastDelegate.h; sourceTree = "<group>"; };
+		A12E4214171637B70063AACD /* PKMulticastDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKMulticastDelegate.m; sourceTree = "<group>"; };
 		A1B7244617160FC100D2F592 /* libPlatformKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPlatformKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B7244917160FC100D2F592 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A1B7244D17160FC100D2F592 /* PlatformKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlatformKit-Prefix.pch"; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 				A1B7244C17160FC100D2F592 /* Supporting Files */,
 				A1EA23251716143400E4DF0C /* PKUUID.h */,
 				A1EA23261716143400E4DF0C /* PKUUID.m */,
+				A12E4213171637B70063AACD /* PKMulticastDelegate.h */,
+				A12E4214171637B70063AACD /* PKMulticastDelegate.m */,
 				A1EA232F17161A3F00E4DF0C /* PKTimeSpan.h */,
 				A1EA233017161A3F00E4DF0C /* PKTimeSpan.m */,
 			);
@@ -316,6 +322,7 @@
 				A1EA23431716215300E4DF0C /* NSMutableSet+PKExtensions.m in Sources */,
 				A1EA2346171621B000E4DF0C /* NSTimer+PKExtensions.m in Sources */,
 				A1EA2349171621ED00E4DF0C /* NSObject+PKExtensions.m in Sources */,
+				A12E4215171637B70063AACD /* PKMulticastDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +341,7 @@
 				A1EA23501716277700E4DF0C /* NSTimer+PKExtensions.m in Sources */,
 				A1EA23511716277A00E4DF0C /* NSData+PKExtensions.m in Sources */,
 				A1EA23521716277D00E4DF0C /* NSObject+PKExtensions.m in Sources */,
+				A12E4216171637B70063AACD /* PKMulticastDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
