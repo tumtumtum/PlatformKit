@@ -10,6 +10,25 @@
 
 @implementation NSArray(PKExtensions)
 
+-(NSArray*) foldWithBlock:(id(^)(id left, id right))block andSeed:(id)seed
+{
+    NSMutableArray* retval = [[NSMutableArray alloc] initWithCapacity:self.count / 2 + 1];
+    
+    id current = seed;
+    
+    for (id item in self)
+    {
+        current = block(current, item);
+        
+        if (current)
+        {
+            [retval addObject:current];
+        }
+    }
+    
+    return retval;
+}
+
 -(NSArray*) map:(id(^)(id obj))block
 {
     NSMutableArray* retval = [[NSMutableArray alloc] initWithCapacity:[self count]];

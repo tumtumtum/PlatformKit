@@ -11,6 +11,7 @@
 @interface NSArray(PKExtensions)
 
 -(NSArray*) map:(id(^)(id obj))block;
+-(NSArray*) foldWithBlock:(id(^)(id left, id right))block andSeed:(id)seed;
 -(void) each:(void(^)(id obj))block;
 -(void) eachSubArrayWithCount:(int)count andBlock:(void(^)(NSArray* subarray))block;
 -(NSArray*) select:(BOOL(^)(id obj))block;
