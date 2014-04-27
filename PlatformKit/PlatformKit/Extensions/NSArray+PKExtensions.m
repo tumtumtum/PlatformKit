@@ -7,6 +7,7 @@
 //
 
 #import "NSArray+PKExtensions.h"
+#import "NSMutableArray+PKExtensions.h"
 
 @implementation NSArray(PKExtensions)
 
