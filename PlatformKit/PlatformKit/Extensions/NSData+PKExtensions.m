@@ -12,7 +12,7 @@
 
 -(NSString*) base64Encode
 {
-    uint8_t *input = (uint8_t *)self.bytes;
+    uint8_t* input = (uint8_t*)self.bytes;
     
     static char table[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
     

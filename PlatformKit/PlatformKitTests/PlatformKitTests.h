@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Thong Nguyen. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface PlatformKitTests : SenTestCase
+@interface PlatformKitTests : XCTestCase
 
 @end

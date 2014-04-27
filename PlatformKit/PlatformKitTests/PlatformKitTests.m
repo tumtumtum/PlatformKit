@@ -22,12 +22,12 @@
 
 -(void) testMd5hexString
 {
-    STAssertTrue([[@"Hello World!" md5HexString] isEqualToString:@"ed076287532e86365e841e92bfc50d8c"], @"MD5 creation failed");
+    XCTAssertTrue([[@"Hello World!" md5HexString] isEqualToString:@"ed076287532e86365e841e92bfc50d8c"], @"MD5 creation failed");
 }
 
 -(void) testSha1HexString
 {
-    STAssertTrue([[@"Hello World!" sha1HexString] isEqualToString:@"2ef7bde608ce5404e97d5f042f95f89f1c232871"], @"SHA1 creation failed");
+    XCTAssertTrue([[@"Hello World!" sha1HexString] isEqualToString:@"2ef7bde608ce5404e97d5f042f95f89f1c232871"], @"SHA1 creation failed");
 }
 
 -(void) testMd5Data

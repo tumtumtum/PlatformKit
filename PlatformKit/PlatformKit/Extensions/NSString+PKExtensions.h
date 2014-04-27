@@ -19,5 +19,6 @@
 -(NSString*) sha1HexString;
 -(NSData*) sha1Data;
 -(NSData*) sha1DataWithEncoding:(NSStringEncoding)encoding;
+-(NSString*) appendUrlComponent:(NSString*)right;
 
 @end

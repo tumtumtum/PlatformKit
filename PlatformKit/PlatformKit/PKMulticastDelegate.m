@@ -72,9 +72,16 @@
 		return nil;
 	}
 	
-	int count = [target->delegates count];
+	NSUInteger count = [target->delegates count];
 	
-	if (count <= 1)
+	if (count == 1)
+	{
+		if ([[target->delegates objectAtIndex:0] isEqual:target])
+		{
+			return nil;
+		}
+	}
+	else if (count == 0)
 	{
 		return nil;
 	}

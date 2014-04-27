@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A106D2CC1726D05100B9D779 /* PKWebServiceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A106D2CB1726D05100B9D779 /* PKWebServiceClient.m */; };
+		A106D2CD1726D05100B9D779 /* PKWebServiceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A106D2CB1726D05100B9D779 /* PKWebServiceClient.m */; };
 		A12E4215171637B70063AACD /* PKMulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A12E4214171637B70063AACD /* PKMulticastDelegate.m */; };
 		A12E4216171637B70063AACD /* PKMulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A12E4214171637B70063AACD /* PKMulticastDelegate.m */; };
 		A1B7244A17160FC100D2F592 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B7244917160FC100D2F592 /* Foundation.framework */; };
-		A1B7245917160FC100D2F592 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B7245817160FC100D2F592 /* SenTestingKit.framework */; };
 		A1B7245C17160FC100D2F592 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B7244917160FC100D2F592 /* Foundation.framework */; };
 		A1B7245F17160FC100D2F592 /* libPlatformKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B7244617160FC100D2F592 /* libPlatformKit.a */; };
 		A1B7246517160FC100D2F592 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1B7246317160FC100D2F592 /* InfoPlist.strings */; };
@@ -61,13 +62,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A106D2CA1726D05100B9D779 /* PKWebServiceClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKWebServiceClient.h; sourceTree = "<group>"; };
+		A106D2CB1726D05100B9D779 /* PKWebServiceClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKWebServiceClient.m; sourceTree = "<group>"; };
 		A12E4213171637B70063AACD /* PKMulticastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKMulticastDelegate.h; sourceTree = "<group>"; };
 		A12E4214171637B70063AACD /* PKMulticastDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKMulticastDelegate.m; sourceTree = "<group>"; };
 		A1B7244617160FC100D2F592 /* libPlatformKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPlatformKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B7244917160FC100D2F592 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A1B7244D17160FC100D2F592 /* PlatformKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlatformKit-Prefix.pch"; sourceTree = "<group>"; };
-		A1B7245717160FC100D2F592 /* PlatformKitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlatformKitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1B7245817160FC100D2F592 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A1B7245717160FC100D2F592 /* PlatformKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlatformKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B7246217160FC100D2F592 /* PlatformKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlatformKitTests-Info.plist"; sourceTree = "<group>"; };
 		A1B7246417160FC100D2F592 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A1B7246617160FC100D2F592 /* PlatformKitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatformKitTests.h; sourceTree = "<group>"; };
@@ -109,7 +111,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1B7245917160FC100D2F592 /* SenTestingKit.framework in Frameworks */,
 				A1B7245C17160FC100D2F592 /* Foundation.framework in Frameworks */,
 				A1B7245F17160FC100D2F592 /* libPlatformKit.a in Frameworks */,
 			);
@@ -132,7 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				A1B7244617160FC100D2F592 /* libPlatformKit.a */,
-				A1B7245717160FC100D2F592 /* PlatformKitTests.octest */,
+				A1B7245717160FC100D2F592 /* PlatformKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,7 +142,6 @@
 			isa = PBXGroup;
 			children = (
 				A1B7244917160FC100D2F592 /* Foundation.framework */,
-				A1B7245817160FC100D2F592 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -157,6 +157,8 @@
 				A12E4214171637B70063AACD /* PKMulticastDelegate.m */,
 				A1EA232F17161A3F00E4DF0C /* PKTimeSpan.h */,
 				A1EA233017161A3F00E4DF0C /* PKTimeSpan.m */,
+				A106D2CA1726D05100B9D779 /* PKWebServiceClient.h */,
+				A106D2CB1726D05100B9D779 /* PKWebServiceClient.m */,
 			);
 			path = PlatformKit;
 			sourceTree = "<group>";
@@ -249,8 +251,8 @@
 			);
 			name = PlatformKitTests;
 			productName = PlatformKitTests;
-			productReference = A1B7245717160FC100D2F592 /* PlatformKitTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = A1B7245717160FC100D2F592 /* PlatformKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -258,6 +260,7 @@
 		A1B7243E17160FC100D2F592 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastTestingUpgradeCheck = 0510;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Thong Nguyen";
 			};
@@ -323,6 +326,7 @@
 				A1EA2346171621B000E4DF0C /* NSTimer+PKExtensions.m in Sources */,
 				A1EA2349171621ED00E4DF0C /* NSObject+PKExtensions.m in Sources */,
 				A12E4215171637B70063AACD /* PKMulticastDelegate.m in Sources */,
+				A106D2CC1726D05100B9D779 /* PKWebServiceClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +346,7 @@
 				A1EA23511716277A00E4DF0C /* NSData+PKExtensions.m in Sources */,
 				A1EA23521716277D00E4DF0C /* NSObject+PKExtensions.m in Sources */,
 				A12E4216171637B70063AACD /* PKMulticastDelegate.m in Sources */,
+				A106D2CD1726D05100B9D779 /* PKWebServiceClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,7 +396,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -414,7 +419,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -450,12 +455,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PlatformKit/PlatformKit-Prefix.pch";
 				INFOPLIST_FILE = "PlatformKitTests/PlatformKitTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -465,12 +470,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PlatformKit/PlatformKit-Prefix.pch";
 				INFOPLIST_FILE = "PlatformKitTests/PlatformKitTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};

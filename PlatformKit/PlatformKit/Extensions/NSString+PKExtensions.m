@@ -33,7 +33,7 @@ static unichar hexChars[16] = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'
 	unsigned char digest[16];
     const char* cStr = [self cStringUsingEncoding:encoding];
 
-	CC_MD5(cStr, strlen(cStr), digest);
+	CC_MD5(cStr, (int)strlen(cStr), digest);
     
     return [NSData dataWithBytes:&digest[0] length:16];
 }
@@ -54,7 +54,7 @@ static unichar hexChars[16] = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'
     
 	unsigned char digest[CC_MD5_DIGEST_LENGTH];
 	
-	CC_MD5(cstr, self.length, digest);
+	CC_MD5(cstr, (int)self.length, digest);
 	
 	unichar hexDigest[CC_MD5_DIGEST_LENGTH * 2];
     
@@ -83,7 +83,7 @@ static unichar hexChars[16] = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'
     
     uint8_t digest[CC_SHA1_DIGEST_LENGTH];
     
-    CC_SHA1(cstr, self.length, digest);
+    CC_SHA1(cstr, (int)self.length, digest);
     
     unichar hexDigest[CC_SHA1_DIGEST_LENGTH * 2];
     
@@ -103,7 +103,7 @@ static unichar hexChars[16] = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'
 
 -(NSData*) sha1DataWithEncoding:(NSStringEncoding)encoding
 {
-    int length = MIN(MAX(self.length, 0), INT_MAX);
+    int length = (int)MIN(MAX(self.length, 0), INT_MAX);
     
     const char* cstr = [self cStringUsingEncoding:encoding];
     
@@ -116,9 +116,36 @@ static unichar hexChars[16] = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'
     
     uint8_t digest[CC_SHA1_DIGEST_LENGTH];
     
-    CC_SHA1(data.bytes, data.length, digest);
+    CC_SHA1(data.bytes, (int)data.length, digest);
     
     return [NSData dataWithBytes:&digest[0] length:20];
 }
+
+-(NSString*) appendUrlComponent:(NSString*)right
+{
+	if ([self characterAtIndex:self.length - 1] == '/')
+	{
+		if ([right characterAtIndex:0] == '/')
+		{
+			return [self stringByAppendingString:[right substringFromIndex:1]];
+		}
+		else
+		{
+			return [self stringByAppendingString:right];
+		}
+	}
+	else
+	{
+		if ([right characterAtIndex:0] == '/')
+		{
+			return [self stringByAppendingString:right];
+		}
+		else
+		{
+			return [[self stringByAppendingString:@"/"] stringByAppendingString:right];
+		}
+	}
+}
+
 
 @end

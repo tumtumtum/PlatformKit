@@ -294,7 +294,7 @@
 +(BOOL) uuidBytesFromString:(NSString*)uuidString bytes:(UInt8*)bytes
 {
 	int offset = 0;
-	int length = uuidString.length;
+	int length = (int)uuidString.length;
 	
 	if (uuidString == nil || length == 0)
 	{
