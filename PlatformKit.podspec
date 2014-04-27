@@ -9,6 +9,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.requires_arc = true
   s.source_files = 'PlatformKit/PlatformKit/**/*.{h,m}'
-  s.ios.deployment_target = '4.3'
+  s.ios.deployment_target = '5.1'
   s.ios.frameworks   = 'CoreFoundation'
 end
