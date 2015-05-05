@@ -37,6 +37,11 @@
 		A1EA23501716277700E4DF0C /* NSTimer+PKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EA2345171621B000E4DF0C /* NSTimer+PKExtensions.m */; };
 		A1EA23511716277A00E4DF0C /* NSData+PKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EA233317161D3D00E4DF0C /* NSData+PKExtensions.m */; };
 		A1EA23521716277D00E4DF0C /* NSObject+PKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EA2348171621EC00E4DF0C /* NSObject+PKExtensions.m */; };
+		A1F733181AF845B2008DC00A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F733171AF845B2008DC00A /* CFNetwork.framework */; };
+		A1F7331A1AF845DA008DC00A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F733191AF845DA008DC00A /* CoreFoundation.framework */; };
+		A1F7331D1AF8460C008DC00A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F733171AF845B2008DC00A /* CFNetwork.framework */; };
+		A1F7331E1AF84610008DC00A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F733191AF845DA008DC00A /* CoreFoundation.framework */; };
+		A1F7331F1AF84618008DC00A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F7331B1AF845E4008DC00A /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +102,9 @@
 		A1EA2345171621B000E4DF0C /* NSTimer+PKExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSTimer+PKExtensions.m"; path = "Extensions/NSTimer+PKExtensions.m"; sourceTree = "<group>"; };
 		A1EA2347171621EC00E4DF0C /* NSObject+PKExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+PKExtensions.h"; path = "Extensions/NSObject+PKExtensions.h"; sourceTree = "<group>"; };
 		A1EA2348171621EC00E4DF0C /* NSObject+PKExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+PKExtensions.m"; path = "Extensions/NSObject+PKExtensions.m"; sourceTree = "<group>"; };
+		A1F733171AF845B2008DC00A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A1F733191AF845DA008DC00A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		A1F7331B1AF845E4008DC00A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +112,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F7331A1AF845DA008DC00A /* CoreFoundation.framework in Frameworks */,
+				A1F733181AF845B2008DC00A /* CFNetwork.framework in Frameworks */,
 				A1B7244A17160FC100D2F592 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,6 +122,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F7331F1AF84618008DC00A /* libz.dylib in Frameworks */,
+				A1F7331E1AF84610008DC00A /* CoreFoundation.framework in Frameworks */,
+				A1F7331D1AF8460C008DC00A /* CFNetwork.framework in Frameworks */,
 				A1B7245C17160FC100D2F592 /* Foundation.framework in Frameworks */,
 				A1B7245F17160FC100D2F592 /* libPlatformKit.a in Frameworks */,
 			);
@@ -142,6 +155,9 @@
 		A1B7244817160FC100D2F592 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A1F7331B1AF845E4008DC00A /* libz.dylib */,
+				A1F733191AF845DA008DC00A /* CoreFoundation.framework */,
+				A1F733171AF845B2008DC00A /* CFNetwork.framework */,
 				A1B7244917160FC100D2F592 /* Foundation.framework */,
 			);
 			name = Frameworks;
