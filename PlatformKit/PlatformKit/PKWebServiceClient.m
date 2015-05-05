@@ -146,9 +146,6 @@ static NSOperationQueue* defaultOperationQueue;
     {
         NSDictionary* sslSettings = [NSDictionary dictionaryWithObjectsAndKeys:
                                      (NSString*)kCFStreamSocketSecurityLevelNegotiatedSSL, kCFStreamSSLLevel,
-                                     [NSNumber numberWithBool:YES], kCFStreamSSLAllowsExpiredCertificates,
-                                     [NSNumber numberWithBool:YES], kCFStreamSSLAllowsExpiredRoots,
-                                     [NSNumber numberWithBool:YES], kCFStreamSSLAllowsAnyRoot,
                                      [NSNumber numberWithBool:NO], kCFStreamSSLValidatesCertificateChain,
                                      [NSNull null], kCFStreamSSLPeerName,
                                      nil];
