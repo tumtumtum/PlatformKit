@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/tumtumtum/PlatformKit.git", :tag => s.version.to_s}
   s.platform     = :ios
   s.requires_arc = true
-  s.library = z
+  s.library = 'z'
   s.source_files = 'PlatformKit/PlatformKit/**/*.{h,m}'
   s.ios.deployment_target = '5.1'
   s.ios.frameworks   = 'CoreFoundation'
