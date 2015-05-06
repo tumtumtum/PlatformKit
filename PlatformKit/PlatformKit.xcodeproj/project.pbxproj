@@ -39,6 +39,37 @@
 		A1EA23521716277D00E4DF0C /* NSObject+PKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EA2348171621EC00E4DF0C /* NSObject+PKExtensions.m */; };
 		A1F733251AF847A8008DC00A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F733241AF847A8008DC00A /* CFNetwork.framework */; };
 		A1F733271AF847AB008DC00A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F733261AF847AB008DC00A /* libz.dylib */; };
+		A1FF2AA61AF9B4260010CDFF /* PlatformKitMac.h in Headers */ = {isa = PBXBuildFile; fileRef = A1FF2AA51AF9B4260010CDFF /* PlatformKitMac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1FF2AAC1AF9B4270010CDFF /* PlatformKitMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1FF2AA11AF9B4260010CDFF /* PlatformKitMac.framework */; };
+		A1FF2AB31AF9B4270010CDFF /* PlatformKitMacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FF2AB21AF9B4270010CDFF /* PlatformKitMacTests.m */; };
+		A1FF2ABA1AF9B43F0010CDFF /* PKUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EA23261716143400E4DF0C /* PKUUID.m */; };
+		A1FF2ABB1AF9B4410010CDFF /* PKMulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A12E4214171637B70063AACD /* PKMulticastDelegate.m */; };
+		A1FF2ABC1AF9B4430010CDFF /* PKTimeSpan.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EA233017161A3F00E4DF0C /* PKTimeSpan.m */; };
+		A1FF2ABD1AF9B4460010CDFF /* PKWebServiceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A106D2CB1726D05100B9D779 /* PKWebServiceClient.m */; };
+		A1FF2ABE1AF9B4510010CDFF /* NSObject+PKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EA2348171621EC00E4DF0C /* NSObject+PKExtensions.m */; };
+		A1FF2ABF1AF9B4520010CDFF /* NSObject+PKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EA2348171621EC00E4DF0C /* NSObject+PKExtensions.m */; };
+		A1FF2AC01AF9B4560010CDFF /* NSData+PKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EA233317161D3D00E4DF0C /* NSData+PKExtensions.m */; };
+		A1FF2AC11AF9B4560010CDFF /* NSTimer+PKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EA2345171621B000E4DF0C /* NSTimer+PKExtensions.m */; };
+		A1FF2AC21AF9B4570010CDFF /* NSData+PKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EA233317161D3D00E4DF0C /* NSData+PKExtensions.m */; };
+		A1FF2AC31AF9B4570010CDFF /* NSTimer+PKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EA2345171621B000E4DF0C /* NSTimer+PKExtensions.m */; };
+		A1FF2AC41AF9B45E0010CDFF /* NSString+PKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EA232B171619B800E4DF0C /* NSString+PKExtensions.m */; };
+		A1FF2AC51AF9B45E0010CDFF /* NSArray+PKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EA233617161FFD00E4DF0C /* NSArray+PKExtensions.m */; };
+		A1FF2AC61AF9B45E0010CDFF /* NSDictionary+PKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EA233C171620F000E4DF0C /* NSDictionary+PKExtensions.m */; };
+		A1FF2AC71AF9B45E0010CDFF /* NSMutableSet+PKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EA23421716215300E4DF0C /* NSMutableSet+PKExtensions.m */; };
+		A1FF2AC81AF9B45E0010CDFF /* NSMutableDictionary+PKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EA233F1716212200E4DF0C /* NSMutableDictionary+PKExtensions.m */; };
+		A1FF2AC91AF9B45E0010CDFF /* NSMutableArray+PKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EA23391716206600E4DF0C /* NSMutableArray+PKExtensions.m */; };
+		A1FF2ACA1AF9B45E0010CDFF /* NSString+PKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EA232B171619B800E4DF0C /* NSString+PKExtensions.m */; };
+		A1FF2ACB1AF9B45E0010CDFF /* NSArray+PKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EA233617161FFD00E4DF0C /* NSArray+PKExtensions.m */; };
+		A1FF2ACC1AF9B45E0010CDFF /* NSDictionary+PKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EA233C171620F000E4DF0C /* NSDictionary+PKExtensions.m */; };
+		A1FF2ACD1AF9B45E0010CDFF /* NSMutableSet+PKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EA23421716215300E4DF0C /* NSMutableSet+PKExtensions.m */; };
+		A1FF2ACE1AF9B45E0010CDFF /* NSMutableDictionary+PKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EA233F1716212200E4DF0C /* NSMutableDictionary+PKExtensions.m */; };
+		A1FF2ACF1AF9B45E0010CDFF /* NSMutableArray+PKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EA23391716206600E4DF0C /* NSMutableArray+PKExtensions.m */; };
+		A1FF2AD01AF9B4640010CDFF /* PKUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EA23261716143400E4DF0C /* PKUUID.m */; };
+		A1FF2AD11AF9B4640010CDFF /* PKMulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A12E4214171637B70063AACD /* PKMulticastDelegate.m */; };
+		A1FF2AD21AF9B4640010CDFF /* PKTimeSpan.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EA233017161A3F00E4DF0C /* PKTimeSpan.m */; };
+		A1FF2AD31AF9B4640010CDFF /* PKWebServiceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A106D2CB1726D05100B9D779 /* PKWebServiceClient.m */; };
+		A1FF2AD51AF9B47A0010CDFF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1FF2AD41AF9B47A0010CDFF /* libz.dylib */; };
+		A1FF2AD61AF9B4860010CDFF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1FF2AD41AF9B47A0010CDFF /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +79,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = A1B7244517160FC100D2F592;
 			remoteInfo = PlatformKit;
+		};
+		A1FF2AAD1AF9B4270010CDFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1B7243E17160FC100D2F592 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1FF2AA01AF9B4260010CDFF;
+			remoteInfo = PlatformKitMac;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -101,6 +139,13 @@
 		A1EA2348171621EC00E4DF0C /* NSObject+PKExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+PKExtensions.m"; path = "Extensions/NSObject+PKExtensions.m"; sourceTree = "<group>"; };
 		A1F733241AF847A8008DC00A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		A1F733261AF847AB008DC00A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		A1FF2AA11AF9B4260010CDFF /* PlatformKitMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlatformKitMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1FF2AA41AF9B4260010CDFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1FF2AA51AF9B4260010CDFF /* PlatformKitMac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatformKitMac.h; sourceTree = "<group>"; };
+		A1FF2AAB1AF9B4260010CDFF /* PlatformKitMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlatformKitMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1FF2AB11AF9B4270010CDFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1FF2AB21AF9B4270010CDFF /* PlatformKitMacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlatformKitMacTests.m; sourceTree = "<group>"; };
+		A1FF2AD41AF9B47A0010CDFF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +168,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1FF2A9D1AF9B4260010CDFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1FF2AD51AF9B47A0010CDFF /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1FF2AA81AF9B4260010CDFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1FF2AD61AF9B4860010CDFF /* libz.dylib in Frameworks */,
+				A1FF2AAC1AF9B4270010CDFF /* PlatformKitMac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -131,6 +193,8 @@
 			children = (
 				A1B7244B17160FC100D2F592 /* PlatformKit */,
 				A1B7246017160FC100D2F592 /* PlatformKitTests */,
+				A1FF2AA21AF9B4260010CDFF /* PlatformKitMac */,
+				A1FF2AAF1AF9B4270010CDFF /* PlatformKitMacTests */,
 				A1B7244817160FC100D2F592 /* Frameworks */,
 				A1B7244717160FC100D2F592 /* Products */,
 			);
@@ -141,6 +205,8 @@
 			children = (
 				A1B7244617160FC100D2F592 /* libPlatformKit.a */,
 				A1B7245717160FC100D2F592 /* PlatformKitTests.xctest */,
+				A1FF2AA11AF9B4260010CDFF /* PlatformKitMac.framework */,
+				A1FF2AAB1AF9B4260010CDFF /* PlatformKitMacTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,6 +214,7 @@
 		A1B7244817160FC100D2F592 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A1FF2AD41AF9B47A0010CDFF /* libz.dylib */,
 				A1F733261AF847AB008DC00A /* libz.dylib */,
 				A1F733241AF847A8008DC00A /* CFNetwork.framework */,
 				A1B7244917160FC100D2F592 /* Foundation.framework */,
@@ -225,7 +292,52 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		A1FF2AA21AF9B4260010CDFF /* PlatformKitMac */ = {
+			isa = PBXGroup;
+			children = (
+				A1FF2AA51AF9B4260010CDFF /* PlatformKitMac.h */,
+				A1FF2AA31AF9B4260010CDFF /* Supporting Files */,
+			);
+			path = PlatformKitMac;
+			sourceTree = "<group>";
+		};
+		A1FF2AA31AF9B4260010CDFF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1FF2AA41AF9B4260010CDFF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1FF2AAF1AF9B4270010CDFF /* PlatformKitMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1FF2AB21AF9B4270010CDFF /* PlatformKitMacTests.m */,
+				A1FF2AB01AF9B4270010CDFF /* Supporting Files */,
+			);
+			path = PlatformKitMacTests;
+			sourceTree = "<group>";
+		};
+		A1FF2AB01AF9B4270010CDFF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1FF2AB11AF9B4270010CDFF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A1FF2A9E1AF9B4260010CDFF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1FF2AA61AF9B4260010CDFF /* PlatformKitMac.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		A1B7244517160FC100D2F592 /* PlatformKit */ = {
@@ -264,6 +376,42 @@
 			productReference = A1B7245717160FC100D2F592 /* PlatformKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A1FF2AA01AF9B4260010CDFF /* PlatformKitMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1FF2AB81AF9B4270010CDFF /* Build configuration list for PBXNativeTarget "PlatformKitMac" */;
+			buildPhases = (
+				A1FF2A9C1AF9B4260010CDFF /* Sources */,
+				A1FF2A9D1AF9B4260010CDFF /* Frameworks */,
+				A1FF2A9E1AF9B4260010CDFF /* Headers */,
+				A1FF2A9F1AF9B4260010CDFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlatformKitMac;
+			productName = PlatformKitMac;
+			productReference = A1FF2AA11AF9B4260010CDFF /* PlatformKitMac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A1FF2AAA1AF9B4260010CDFF /* PlatformKitMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1FF2AB91AF9B4270010CDFF /* Build configuration list for PBXNativeTarget "PlatformKitMacTests" */;
+			buildPhases = (
+				A1FF2AA71AF9B4260010CDFF /* Sources */,
+				A1FF2AA81AF9B4260010CDFF /* Frameworks */,
+				A1FF2AA91AF9B4260010CDFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1FF2AAE1AF9B4270010CDFF /* PBXTargetDependency */,
+			);
+			name = PlatformKitMacTests;
+			productName = PlatformKitMacTests;
+			productReference = A1FF2AAB1AF9B4260010CDFF /* PlatformKitMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -273,6 +421,14 @@
 				LastTestingUpgradeCheck = 0510;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Thong Nguyen";
+				TargetAttributes = {
+					A1FF2AA01AF9B4260010CDFF = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					A1FF2AAA1AF9B4260010CDFF = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
 			};
 			buildConfigurationList = A1B7244117160FC100D2F592 /* Build configuration list for PBXProject "PlatformKit" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -288,6 +444,8 @@
 			targets = (
 				A1B7244517160FC100D2F592 /* PlatformKit */,
 				A1B7245617160FC100D2F592 /* PlatformKitTests */,
+				A1FF2AA01AF9B4260010CDFF /* PlatformKitMac */,
+				A1FF2AAA1AF9B4260010CDFF /* PlatformKitMacTests */,
 			);
 		};
 /* End PBXProject section */
@@ -298,6 +456,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1B7246517160FC100D2F592 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1FF2A9F1AF9B4260010CDFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1FF2AA91AF9B4260010CDFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +532,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1FF2A9C1AF9B4260010CDFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1FF2ACD1AF9B45E0010CDFF /* NSMutableSet+PKExtensions.m in Sources */,
+				A1FF2ACA1AF9B45E0010CDFF /* NSString+PKExtensions.m in Sources */,
+				A1FF2ACC1AF9B45E0010CDFF /* NSDictionary+PKExtensions.m in Sources */,
+				A1FF2ABD1AF9B4460010CDFF /* PKWebServiceClient.m in Sources */,
+				A1FF2ACF1AF9B45E0010CDFF /* NSMutableArray+PKExtensions.m in Sources */,
+				A1FF2ABB1AF9B4410010CDFF /* PKMulticastDelegate.m in Sources */,
+				A1FF2ABE1AF9B4510010CDFF /* NSObject+PKExtensions.m in Sources */,
+				A1FF2ACB1AF9B45E0010CDFF /* NSArray+PKExtensions.m in Sources */,
+				A1FF2AC11AF9B4560010CDFF /* NSTimer+PKExtensions.m in Sources */,
+				A1FF2ACE1AF9B45E0010CDFF /* NSMutableDictionary+PKExtensions.m in Sources */,
+				A1FF2ABA1AF9B43F0010CDFF /* PKUUID.m in Sources */,
+				A1FF2ABC1AF9B4430010CDFF /* PKTimeSpan.m in Sources */,
+				A1FF2AC01AF9B4560010CDFF /* NSData+PKExtensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1FF2AA71AF9B4260010CDFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1FF2AD21AF9B4640010CDFF /* PKTimeSpan.m in Sources */,
+				A1FF2AD11AF9B4640010CDFF /* PKMulticastDelegate.m in Sources */,
+				A1FF2ABF1AF9B4520010CDFF /* NSObject+PKExtensions.m in Sources */,
+				A1FF2AC51AF9B45E0010CDFF /* NSArray+PKExtensions.m in Sources */,
+				A1FF2AD31AF9B4640010CDFF /* PKWebServiceClient.m in Sources */,
+				A1FF2AC81AF9B45E0010CDFF /* NSMutableDictionary+PKExtensions.m in Sources */,
+				A1FF2AC61AF9B45E0010CDFF /* NSDictionary+PKExtensions.m in Sources */,
+				A1FF2AC71AF9B45E0010CDFF /* NSMutableSet+PKExtensions.m in Sources */,
+				A1FF2AC31AF9B4570010CDFF /* NSTimer+PKExtensions.m in Sources */,
+				A1FF2AB31AF9B4270010CDFF /* PlatformKitMacTests.m in Sources */,
+				A1FF2AC21AF9B4570010CDFF /* NSData+PKExtensions.m in Sources */,
+				A1FF2AC91AF9B45E0010CDFF /* NSMutableArray+PKExtensions.m in Sources */,
+				A1FF2AD01AF9B4640010CDFF /* PKUUID.m in Sources */,
+				A1FF2AC41AF9B45E0010CDFF /* NSString+PKExtensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -367,6 +580,11 @@
 			isa = PBXTargetDependency;
 			target = A1B7244517160FC100D2F592 /* PlatformKit */;
 			targetProxy = A1B7245D17160FC100D2F592 /* PBXContainerItemProxy */;
+		};
+		A1FF2AAE1AF9B4270010CDFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1FF2AA01AF9B4260010CDFF /* PlatformKitMac */;
+			targetProxy = A1FF2AAD1AF9B4270010CDFF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -489,6 +707,150 @@
 			};
 			name = Release;
 		};
+		A1FF2AB41AF9B4270010CDFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = PlatformKitMac/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A1FF2AB51AF9B4270010CDFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = PlatformKitMac/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A1FF2AB61AF9B4270010CDFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = PlatformKitMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A1FF2AB71AF9B4270010CDFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = PlatformKitMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -518,6 +880,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		A1FF2AB81AF9B4270010CDFF /* Build configuration list for PBXNativeTarget "PlatformKitMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1FF2AB41AF9B4270010CDFF /* Debug */,
+				A1FF2AB51AF9B4270010CDFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A1FF2AB91AF9B4270010CDFF /* Build configuration list for PBXNativeTarget "PlatformKitMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1FF2AB61AF9B4270010CDFF /* Debug */,
+				A1FF2AB71AF9B4270010CDFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
