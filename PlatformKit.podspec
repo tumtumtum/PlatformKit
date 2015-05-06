@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
   s.source_files = 'PlatformKit/PlatformKit/**/*.{h,m}'
   s.ios.deployment_target = '5.1'
   s.ios.frameworks   = 'CoreFoundation'
-  s.ios.deployment_target = '10.7'
+  s.osx.deployment_target = '10.7'
   s.osx.frameworks = 'CoreFoundation'
 end
