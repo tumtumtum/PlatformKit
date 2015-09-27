@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "PlatformKit"
-  s.version      = "0.1.4"
+  s.version      = "0.1.5"
   s.summary      = "A set of useful classes and extensions for modern Objective C"
   s.homepage     = "https://github.com/tumtumtum/PlatformKit/"
   s.license      = 'MIT'
@@ -14,4 +14,6 @@ Pod::Spec.new do |s|
   s.ios.frameworks   = 'CoreFoundation'
   s.osx.deployment_target = '10.7'
   s.osx.frameworks = 'CoreFoundation'
+  s.watchos.deployment_target = '2.0'
+  s.watchos.frameworks   = 'CoreFoundation'
 end

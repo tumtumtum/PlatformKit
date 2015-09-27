@@ -6,6 +6,8 @@
 //  Copyright (c) 2013-2014 Thong Nguyen. All rights reserved.
 //
 
+#if !TARGET_OS_WATCH
+
 #import <Foundation/Foundation.h>
 
 #define kWebServiceResponse @"PKWebServiceResponse"
@@ -34,3 +36,5 @@
 -(void)postWithRequestObject:(id)requestObject andCallback : (void(^)(id))callback;
 
 @end
+
+#endif
