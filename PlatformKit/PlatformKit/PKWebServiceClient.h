@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#if !TARGET_OS_WATCH
+
 #define kWebServiceResponse @"PKWebServiceResponse"
 #define kWebServiceCallContext @"PKWebServiceCallContext"
 #define kWebServiceClientClientSideError @"PKWebServiceClientClientSideError"
@@ -34,3 +36,5 @@
 -(void)postWithRequestObject:(id)requestObject andCallback : (void(^)(id))callback;
 
 @end
+
+#endif

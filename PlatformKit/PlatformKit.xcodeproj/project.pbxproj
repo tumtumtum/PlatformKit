@@ -107,6 +107,7 @@
 		A12E4213171637B70063AACD /* PKMulticastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKMulticastDelegate.h; sourceTree = "<group>"; };
 		A12E4214171637B70063AACD /* PKMulticastDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKMulticastDelegate.m; sourceTree = "<group>"; };
 		A154B2AF196D60860085D7BC /* PKDictionarySerializable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKDictionarySerializable.h; sourceTree = "<group>"; };
+		A1612C641C51413300EDACB3 /* PKFormEncodingSerializable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKFormEncodingSerializable.h; sourceTree = "<group>"; };
 		A1B7244617160FC100D2F592 /* libPlatformKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPlatformKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B7244917160FC100D2F592 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A1B7244D17160FC100D2F592 /* PlatformKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlatformKit-Prefix.pch"; sourceTree = "<group>"; };
@@ -235,6 +236,7 @@
 				A1EA233017161A3F00E4DF0C /* PKTimeSpan.m */,
 				A106D2CA1726D05100B9D779 /* PKWebServiceClient.h */,
 				A106D2CB1726D05100B9D779 /* PKWebServiceClient.m */,
+				A1612C641C51413300EDACB3 /* PKFormEncodingSerializable.h */,
 				A154B2AF196D60860085D7BC /* PKDictionarySerializable.h */,
 			);
 			path = PlatformKit;
@@ -645,7 +647,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/PlatformKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PlatformKit/PlatformKit-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -658,7 +660,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/PlatformKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PlatformKit/PlatformKit-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
