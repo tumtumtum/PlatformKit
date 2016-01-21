@@ -41,9 +41,7 @@
 -(PKTimeSpan*) add:(PKTimeSpan*)ts;
 -(PKTimeSpan*) subtract:(PKTimeSpan*)ts;
 -(PKTimeSpan*) negate;
-
 -(NSString*) toIsoString;
-
 
 @property (nonatomic, readonly) int days;
 @property (nonatomic, readonly) int hours;
@@ -57,8 +55,5 @@
 @property (nonatomic, readonly) double totalMinutes;
 @property (nonatomic, readonly) double totalSeconds;
 @property (nonatomic, readonly) double totalMilliseconds;
-
-
-
 
 @end
