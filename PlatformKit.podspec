@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "PlatformKit"
-  s.version      = "0.1.9"
+  s.version      = "0.2.0"
   s.summary      = "A set of useful classes and extensions for modern Objective C"
   s.homepage     = "https://github.com/tumtumtum/PlatformKit/"
   s.license      = 'MIT'
@@ -22,11 +22,11 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Network' do |sp|
-	sp.source_files = 'PlatformKit/PlatformKit/Network/**/*.{h,m}'
+	sp.source_files = ['PlatformKit/PlatformKit/Network/**/*.{h,m}', 'PlatformKit/PlatformKit/Core/**/*.{h,m}']
   end
 
   s.subspec 'UI' do |sp|
-	sp.source_files = 'PlatformKit/PlatformKit/UI/**/*.{h,m}'
+	sp.source_files = ['PlatformKit/PlatformKit/UI/**/*.{h,m}', 'PlatformKit/PlatformKit/Core/**/*.{h,m}']
   end
 
 end
