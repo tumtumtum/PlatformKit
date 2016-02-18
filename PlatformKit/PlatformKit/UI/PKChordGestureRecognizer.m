@@ -5,7 +5,9 @@
 //  Copyright (c) 2016 Thong Nguyen. All rights reserved.
 //
 
-#if TARGET_OS_IOS && !TARGET_OS_WATCH 
+#import "Foundation/Foundation.h"
+
+#if TARGET_OS_IOS && !TARGET_OS_WATCH
 
 #import "PKChordGestureRecognizer.h"
 
@@ -13,13 +15,23 @@
 
 -(id) initWithView:(UIView*)viewIn andGestures:(PKChordGestureRecognizerState)state1, ...
 {
+	va_list args;
+	va_start(args, state1);
+	
+	id retval = [self initWithView:viewIn andGestures:state1 args:args];
+	
+	va_end(args);
+	
+	return retval;
+	
+}
+
+-(id) initWithView:(UIView*)viewIn andGestures:(PKChordGestureRecognizerState)state1 args:(va_list)args
+{
     if (self = [super init])
     {
         view = viewIn;
 
-        va_list args;
-        va_start(args, state1);
-        
         actionsToRecognize = [[NSMutableArray alloc] init];
         
         PKChordGestureRecognizerState state;
@@ -29,7 +41,6 @@
             [actionsToRecognize addObject: [NSNumber numberWithInt: state]];
         }
 
-        va_end(args);
         
         actions = [[NSMutableArray alloc] initWithCapacity:actionsToRecognize.count];
 		

@@ -5,9 +5,10 @@
 //  Copyright (c) 2016 Thong Nguyen. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
 #if TARGET_OS_IOS && !TARGET_OS_WATCH
 
-#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSInteger, PKChordGestureRecognizerState)
@@ -37,6 +38,7 @@ typedef NS_ENUM(NSInteger, PKChordGestureRecognizerState)
 @property (readwrite, weak) id<PKChordGestureRecognizerDelegate> delegate;
 
 -(id) initWithView:(UIView*)viewIn andGestures:(PKChordGestureRecognizerState)state1, ...;
+-(id) initWithView:(UIView*)viewIn andGestures:(PKChordGestureRecognizerState)state1 args:(va_list)args;
 
 @end
 
