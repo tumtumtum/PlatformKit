@@ -9,7 +9,6 @@
 #if !TARGET_OS_WATCH
 
 #import "PKWebServiceClient.h"
-#import "PKUUID.h"
 #import <CommonCrypto/CommonDigest.h>
 #import <zlib.h>
 #import "NSString+PKExtensions.h"

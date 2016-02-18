@@ -10,13 +10,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-typedef enum
+typedef NS_ENUM(NSInteger, PKChordGestureRecognizerState)
 {
-    GestureStateNil,
-	GestureStateRotateLeft,
-	GestureStateRotateRight	
-}
-GestureState;
+    PKChordGestureRecognizerStateNil,
+	PKChordGestureRecognizerStateLeft,
+	PKChordGestureRecognizerStateRight
+};
 
 @class PKChordGestureRecognizer;
 
@@ -37,7 +36,7 @@ GestureState;
 
 @property (readwrite, weak) id<PKChordGestureRecognizerDelegate> delegate;
 
--(id) initWithView:(UIView*)viewIn andGestures:(GestureState)state1, ...;
+-(id) initWithView:(UIView*)viewIn andGestures:(PKChordGestureRecognizerState)state1, ...;
 
 @end
 

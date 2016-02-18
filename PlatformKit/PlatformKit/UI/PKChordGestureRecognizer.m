@@ -11,7 +11,7 @@
 
 @implementation PKChordGestureRecognizer
 
--(id) initWithView:(UIView*)viewIn andGestures:(GestureState)state1, ...
+-(id) initWithView:(UIView*)viewIn andGestures:(PKChordGestureRecognizerState)state1, ...
 {
     if (self = [super init])
     {
@@ -22,9 +22,9 @@
         
         actionsToRecognize = [[NSMutableArray alloc] init];
         
-        GestureState state;
+        PKChordGestureRecognizerState state;
         
-        while ((state = va_arg(args, GestureState)))
+        while ((state = va_arg(args, PKChordGestureRecognizerState)))
         {
             [actionsToRecognize addObject: [NSNumber numberWithInt: state]];
         }
@@ -90,7 +90,7 @@
 		
 		lastRotation = gestureRecogniser.rotation;
 		
-		[actions addObject:[NSNumber numberWithInt:GestureStateRotateLeft]];
+		[actions addObject:@(PKChordGestureRecognizerStateLeft)];
 	}
 	else if (gestureRecogniser.rotation > 0)
 	{
@@ -101,7 +101,7 @@
 		
 		lastRotation = gestureRecogniser.rotation;
 		
-		[actions addObject:[NSNumber numberWithInt:GestureStateRotateRight]];
+		[actions addObject:@(PKChordGestureRecognizerStateRight)];
 	}
 	
 	while (actions.count > actionsToRecognize.count)
