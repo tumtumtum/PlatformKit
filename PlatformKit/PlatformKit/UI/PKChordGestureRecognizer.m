@@ -18,7 +18,7 @@
 	va_list args;
 	va_start(args, state1);
 	
-	id retval = [self initWithView:viewIn andGesturesList:args];
+	id retval = [self initWithView:viewIn andGestures:state1 remainingGestures:args];
 	
 	va_end(args);
 	
@@ -26,21 +26,22 @@
 	
 }
 
--(id) initWithView:(UIView*)viewIn andGesturesList:(va_list)gestures
+-(id) initWithView:(UIView*)viewIn andGestures:(PKChordGestureRecognizerState)first remainingGestures:(va_list)gestures
 {
     if (self = [super init])
     {
         view = viewIn;
 
         actionsToRecognize = [[NSMutableArray alloc] init];
+		
+		[actionsToRecognize addObject:@(first)];
         
         PKChordGestureRecognizerState state;
         
         while ((state = va_arg(gestures, PKChordGestureRecognizerState)))
         {
-            [actionsToRecognize addObject: [NSNumber numberWithInt: state]];
+            [actionsToRecognize addObject:@(state)];
         }
-
         
         actions = [[NSMutableArray alloc] initWithCapacity:actionsToRecognize.count];
 		
