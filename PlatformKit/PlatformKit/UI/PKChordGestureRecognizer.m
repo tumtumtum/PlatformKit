@@ -5,7 +5,7 @@
 //  Copyright (c) 2016 Thong Nguyen. All rights reserved.
 //
 
-#if !TARGET_OS_WATCH && !TARGET_OS_MAC
+#if TARGET_OS_IOS && !TARGET_OS_WATCH 
 
 #import "PKChordGestureRecognizer.h"
 
