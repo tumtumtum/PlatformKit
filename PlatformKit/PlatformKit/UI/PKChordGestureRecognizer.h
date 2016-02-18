@@ -38,8 +38,7 @@ typedef NS_ENUM(NSInteger, PKChordGestureRecognizerState)
 @property (readwrite, weak) id<PKChordGestureRecognizerDelegate> delegate;
 
 -(id) initWithView:(UIView*)viewIn andGestures:(PKChordGestureRecognizerState)state1, ...;
--(id) initWithView:(UIView*)viewIn andGestures:(PKChordGestureRecognizerState)first remainingGestures:(va_list)gestures;
-
+-(id) initWithView:(UIView*)viewIn andGesturesArray:(NSArray*)gestures;
 @end
 
 #endif
