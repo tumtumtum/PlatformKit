@@ -11,11 +11,29 @@
 
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSInteger, PKChordGestureRecognizerState)
+typedef NS_ENUM(NSInteger, PKChordGesture)
 {
-    PKChordGestureRecognizerStateNil,
-	PKChordGestureRecognizerStateLeft,
-	PKChordGestureRecognizerStateRight
+	PKChordGestureNil,
+	PKChordGestureRotateLeft,
+	PKChordGestureRotateRight,
+	PKChordGestureOneFingerTap,
+	PKChordGestureTwoFingerTap,
+	PKChordGestureThreeFingerTap,
+	PKChordGestureOneFingerDoubleTap,
+	PKChordGestureTwoFingerDoubleTap,
+	PKChordGestureThreeFingerDoubleTap,
+	PKChordGestureOneFingerPanUp,
+	PKChordGestureTwoFingerPanUp,
+	PKChordGestureThreeFingerPanUp,
+	PKChordGestureOneFingerPanDown,
+	PKChordGestureTwoFingerPanDown,
+	PKChordGestureThreeFingerPanDown,
+	PKChordGestureOneFingerPanLeft,
+	PKChordGestureTwoFingerPanLeft,
+	PKChordGestureThreeFingerPanLeft,
+	PKChordGestureOneFingerPanRight,
+	PKChordGestureTwoFingerPanRight,
+	PKChordGestureThreeFingerPanRight
 };
 
 @class PKChordGestureRecognizer;
@@ -25,19 +43,11 @@ typedef NS_ENUM(NSInteger, PKChordGestureRecognizerState)
 @end
 
 @interface PKChordGestureRecognizer : NSObject
-{
-@private
-    __weak UIView* view;
-    float lastRotation;
-    NSMutableArray* actions;
-    NSMutableArray* actionsToRecognize;
-    UITapGestureRecognizer* tapRecognizer;
-    UIRotationGestureRecognizer* rotationGestureRecogniser;
-}
 
+@property (readwrite) Float32 panThreshold;
 @property (readwrite, weak) id<PKChordGestureRecognizerDelegate> delegate;
 
--(id) initWithView:(UIView*)viewIn andGestures:(PKChordGestureRecognizerState)state1, ...;
+-(id) initWithView:(UIView*)viewIn andGestures:(PKChordGesture)state1, ...;
 -(id) initWithView:(UIView*)viewIn andGesturesArray:(NSArray*)gestures;
 @end
 

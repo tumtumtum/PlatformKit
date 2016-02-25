@@ -483,7 +483,7 @@
 
 -(id) copyWithZone:(NSZone*)zone
 {
-	PKUUID* retval = [[PKUUID alloc] initWithBytes:data];
+	PKUUID* retval = [[PKUUID allocWithZone:zone] initWithBytes:data];
     
 	return retval;
 }

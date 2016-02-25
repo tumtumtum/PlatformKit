@@ -9,7 +9,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef enum
+typedef NS_ENUM(NSInteger, PKUUIDFormat)
 {
     PKUUIDFormatCompact = 0,
     PKUUIDFormatIncludeDashes = 1,
@@ -19,10 +19,9 @@ typedef enum
     PKUUIDFormatDashed = PKUUIDFormatIncludeDashes,
     PKUUIDFormatBraces = PKUUIDFormatIncludeDashes | PKUUIDFormatIncludeBraces,
     PKUUIDFormatParenthesis = PKUUIDFormatIncludeDashes | PKUUIDFormatIncludeParenthesis
-}
-PKUUIDFormat;
+};
 
-@interface PKUUID : NSObject<NSCoding>
+@interface PKUUID : NSObject<NSCoding, NSCopying>
 {
 @private
     UInt8 data[16];
@@ -42,5 +41,6 @@ PKUUIDFormat;
 +(PKUUID*) randomUUID;
 +(PKUUID*) emptyUUID;
 +(PKUUID*) uuidFromString:(NSString*)uuidString;
+
 
 @end
