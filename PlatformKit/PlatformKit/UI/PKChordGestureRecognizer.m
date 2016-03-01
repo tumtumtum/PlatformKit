@@ -112,6 +112,8 @@
 				panGestureRecognizer.minimumNumberOfTouches = 1;
 				panGestureRecognizer.maximumNumberOfTouches = 3;
 				[view addGestureRecognizer:panGestureRecognizer];
+				
+				[panGestureRecognizer requireGestureRecognizerToFail:threeFingerTapRecognizer];
 			}
 		}
 		
@@ -157,6 +159,11 @@
 	CGPoint distance = [gestureRecogniser translationInView:view];
 	
 	if (!((fabs(distance.x) > threshold || fabs(distance.y) > threshold)))
+	{
+		return;
+	}
+	
+	if (gestureRecogniser.numberOfTouches <= 0)
 	{
 		return;
 	}
