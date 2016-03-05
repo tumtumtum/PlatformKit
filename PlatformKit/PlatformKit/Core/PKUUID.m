@@ -481,6 +481,21 @@
 	return [self stringValueWithFormat:PKUUIDFormatCompact];
 }
 
+-(NSString*) dashedStringValue
+{
+	return [self stringValueWithFormat:PKUUIDFormatDashed];
+}
+
+-(NSString*) bracedStringValue
+{
+	return [self stringValueWithFormat:PKUUIDFormatBraces];
+}
+
+-(NSString*) parenedStringValue
+{
+	return [self stringValueWithFormat:PKUUIDFormatParenthesis];
+}
+
 -(id) copyWithZone:(NSZone*)zone
 {
 	PKUUID* retval = [[PKUUID allocWithZone:zone] initWithBytes:data];

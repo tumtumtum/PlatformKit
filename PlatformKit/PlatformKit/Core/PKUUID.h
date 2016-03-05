@@ -30,6 +30,10 @@ typedef NS_ENUM(NSInteger, PKUUIDFormat)
 -(id) initWithString:(NSString*)string;
 -(id) initWithBytes:(UInt8[16])bytes;
 -(NSString*) stringValue;
+-(NSString*) compactStringValue;
+-(NSString*) dashedStringValue;
+-(NSString*) bracedStringValue;	
+-(NSString*) parenedStringValue;	
 -(CFUUIDBytes) uuidBytes;
 -(void) byteDataToBuffer:(UInt8*)bytes;
 -(NSString*) stringValueWithFormat:(PKUUIDFormat)format;
