@@ -37,6 +37,7 @@ typedef NS_ENUM(NSInteger, PKUUIDFormat)
 -(BOOL) isEqual:(id)object;
 -(NSUInteger) hash;
 -(NSString*) description;
+-(NSString*) compactStringValue;
 
 +(PKUUID*) randomUUID;
 +(PKUUID*) emptyUUID;
