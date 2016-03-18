@@ -92,7 +92,7 @@ static PKTimeSpan* MaxValue;
     NSTextCheckingResult* match;
     NSString* value;
     
-    if ([matches count] >= 13)
+    if ([matches count] > 0)
     {
         match = [matches objectAtIndex:2];
         value = [isoString substringWithRange:match.range];
