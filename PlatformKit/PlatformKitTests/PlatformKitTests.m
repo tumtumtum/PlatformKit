@@ -7,6 +7,8 @@
 //
 
 #import "PlatformKitTests.h"
+#import "PKTimeSpan.h"
+#import "NSString+PKExtensions.h"
 
 @implementation PlatformKitTests
 
@@ -38,6 +40,13 @@
 -(void) testSha1Data
 {
     [@"Hello World!" sha1Data];
+}
+
+-(void) testParseTimespan
+{
+	PKTimeSpan* timespan = [PKTimeSpan parse:@"PT30S"];
+	
+	NSString* value = [timespan toIsoString];
 }
 
 @end
