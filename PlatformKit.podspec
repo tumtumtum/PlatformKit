@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "PlatformKit"
-  s.version      = "0.3.0"
+  s.version      = "0.3.1"
   s.summary      = "A set of useful classes and extensions for modern Objective C"
   s.homepage     = "https://github.com/tumtumtum/PlatformKit/"
   s.license      = 'MIT'
