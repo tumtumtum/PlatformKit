@@ -92,55 +92,82 @@ static PKTimeSpan* MaxValue;
     NSTextCheckingResult* match;
     NSString* value;
     
-    if ([matches count] >= 13)
+    if ([matches count] == 1)
     {
-        match = [matches objectAtIndex:2];
-        value = [isoString substringWithRange:match.range];
+		NSRange range;
+		match = matches.firstObject;
+		
+        range = [match rangeAtIndex:2];
+		
+		if (range.length > 0)
+		{
+			value = [isoString substringWithRange:range];
+		}
         
         if (value && ![value isEqualToString:@""])
         {
             year = [value doubleValue];
         }
         
-        match = [matches objectAtIndex:4];
-        value = [isoString substringWithRange:match.range];
-        
-        if (value && ![value isEqualToString:@""])
-        {
-            month = [value doubleValue];
-        }
-        
-        match = [matches objectAtIndex:6];
-        value = [isoString substringWithRange:match.range];
-        
-        if (value && ![value isEqualToString:@""])
-        {
-            day = [value doubleValue];
-        }
-        
-        match = [matches objectAtIndex:9];
-        value = [isoString substringWithRange:match.range];
-        
-        if (value && ![value isEqualToString:@""])
-        {
-            hour = [value doubleValue];
-        }
-        
-        match = [matches objectAtIndex:11];
-        value = [isoString substringWithRange:match.range];
-        
-        if (value && ![value isEqualToString:@""])
-        {
-            minute = [value doubleValue];
-        }
-        
-        match = [matches objectAtIndex:13];
-        value = [isoString substringWithRange:match.range];
-        
-        if (value && ![value isEqualToString:@""])
-        {
-            second = [value doubleValue];
-        }
+		range = [match rangeAtIndex:4];
+
+		if (range.length > 0)
+		{
+			value = [isoString substringWithRange:range];
+		
+			if (value && ![value isEqualToString:@""])
+			{
+				month = [value doubleValue];
+			}
+		}
+		
+		range = [match rangeAtIndex:6];
+		
+		if (range.length > 0)
+		{
+			value = [isoString substringWithRange:range];
+			
+			if (value && ![value isEqualToString:@""])
+			{
+				day = [value doubleValue];
+			}
+		}
+		
+		range = [match rangeAtIndex:9];
+		
+		if (range.length > 0)
+		{
+			value = [isoString substringWithRange:range];
+			
+			if (value && ![value isEqualToString:@""])
+			{
+				hour = [value doubleValue];
+			}
+		}
+		
+		range = [match rangeAtIndex:11];
+		
+		if (range.length > 0)
+		{
+			value = [isoString substringWithRange:range];
+			
+			if (value && ![value isEqualToString:@""])
+			{
+				minute = [value doubleValue];
+			}
+		}
+		
+		range = [match rangeAtIndex:13];
+
+		if (range.length > 0)
+		{
+			value = [isoString substringWithRange:range];
+			
+			if (value && ![value isEqualToString:@""])
+			{
+				second = [value doubleValue];
+			}
+		}
     }
     else
     {
@@ -260,7 +287,7 @@ static PKTimeSpan* MaxValue;
 {
     int64_t tempTicks = ticks - ts.ticks;
     
-    if (((ticks >> 0x3f) == (ts.ticks >> 0x3f)) && ((ticks >> 0x3f) != (tempTicks >> 0x3f)))
+    if (((ticks >> 0x3f) != (ts.ticks >> 0x3f)) && ((ticks >> 0x3f) != (tempTicks >> 0x3f)))
     {
         [NSException raise:@"TimeSpan overflow" format:@""];
     }
