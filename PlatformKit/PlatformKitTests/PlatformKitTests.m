@@ -9,6 +9,7 @@
 #import "PlatformKitTests.h"
 #import "PKTimeSpan.h"
 #import "NSString+PKExtensions.h"
+#import "NSData+PKExtensions.h"
 
 @implementation PlatformKitTests
 
@@ -47,6 +48,19 @@
 	PKTimeSpan* timespan = [PKTimeSpan parse:@"PT30S"];
 	
 	NSString* value = [timespan toIsoString];
+    
+    NSLog(@"%@", value);
+}
+
+-(void) testHexString
+{
+    char buffer[5] = { 255, 64, 2, 15, 63 };
+    
+    NSData* data = [[NSData alloc] initWithBytes:buffer length:sizeof(buffer)];
+    
+    NSLog(@"%@", [data hexString]);
+    
+    XCTAssertEqualObjects([data hexString], @"ff40020f3f");
 }
 
 @end

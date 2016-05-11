@@ -8,6 +8,9 @@
 
 #import "NSData+PKExtensions.h"
 
+static unichar hexChars[16] = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f' };
+static unichar uppercaseHexChars[16] = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F' };
+
 @implementation NSData (PKExtensions)
 
 -(NSString*) base64Encode
@@ -46,15 +49,36 @@
 
 -(NSString*) hexString
 {
-    unichar* unichars = malloc(sizeof(unichar) * self.length * 2);
+    unichar* unichars = malloc(sizeof(unichar) * self.length * 2 + 1);
+    
+    unichars[sizeof(unichar) * self.length * 2] = 0;
+    unsigned char* chars = (unsigned char*)self.bytes;
     
     for (int i = 0; i < self.length; i++)
 	{
-        unsigned char* chars = (unsigned char*)self.bytes;
+        UInt8 c = (UInt8)chars[i];
         
-        unichars[(i * 2)] = (chars[i] & 0xf0) >> 4;
-        unichars[(i * 2) + 1] = (chars[i] & 0x0f);
+        unichars[(i * 2)] = hexChars[(c & 0xf0) >> 4];
+        unichars[(i * 2) + 1] = hexChars[(c & 0x0f)];
 	}
+    
+    return [[NSString alloc] initWithCharactersNoCopy:unichars length:self.length * 2 freeWhenDone:YES];
+}
+
+-(NSString*) uppercaseHexString
+{
+    unichar* unichars = malloc(sizeof(unichar) * self.length * 2 + 1);
+    
+    unichars[sizeof(unichar) * self.length * 2] = 0;
+    unsigned char* chars = (unsigned char*)self.bytes;
+    
+    for (int i = 0; i < self.length; i++)
+    {
+        UInt8 c = (UInt8)chars[i];
+        
+        unichars[(i * 2)] = uppercaseHexChars[(c & 0xf0) >> 4];
+        unichars[(i * 2) + 1] = uppercaseHexChars[(c & 0x0f)];
+    }
     
     return [[NSString alloc] initWithCharactersNoCopy:unichars length:self.length * 2 freeWhenDone:YES];
 }
