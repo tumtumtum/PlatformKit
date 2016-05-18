@@ -149,15 +149,14 @@ static NSOperationQueue* defaultOperationQueue;
 
     if ([url.scheme caseInsensitiveCompare:@"https"] == NSOrderedSame)
     {
-		id enableSsl = [options objectForKey:@"SSL/Validate-Certificate-Chain"];
+		BOOL disableCertificateValidation = [[options objectForKey:@"SSL/Disable-Certificate-Chain-Validation"] boolValue];
 
-		if (enableSsl)
+		if (disableCertificateValidation)
 		{
 			NSDictionary* sslSettings = [NSDictionary dictionaryWithObjectsAndKeys:
-                                     (NSString*)kCFStreamSocketSecurityLevelNegotiatedSSL, kCFStreamSSLLevel,
-                                     [NSNumber numberWithBool:NO], kCFStreamSSLValidatesCertificateChain,
-                                     [NSNull null], kCFStreamSSLPeerName,
-                                     nil];
+				(NSString*)kCFStreamSocketSecurityLevelNegotiatedSSL, kCFStreamSSLLevel,
+				[NSNumber numberWithBool: NO], kCFStreamSSLValidatesCertificateChain,
+				[NSNull null], kCFStreamSSLPeerName, nil];
 		
 			CFReadStreamSetProperty(stream, kCFStreamPropertySSLSettings, (CFTypeRef)sslSettings);
 		}
