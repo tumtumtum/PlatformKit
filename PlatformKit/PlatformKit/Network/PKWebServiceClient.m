@@ -149,9 +149,9 @@ static NSOperationQueue* defaultOperationQueue;
 
     if ([url.scheme caseInsensitiveCompare:@"https"] == NSOrderedSame)
     {
-		BOOL disableCertificateValidation = [[options objectForKey:@"SSL/Disable-Certificate-Chain-Validation"] boolValue];
+		NSString* disableCertificateValidation = [[options objectForKey:@"SSL/Disable-Certificate-Chain-Validation"] stringValue];
 
-		if (disableCertificateValidation)
+		if ([disableCertificateValidation compare:@"true" options:NSCaseInsensitiveSearch] == NSOrderedSame)
 		{
 			NSDictionary* sslSettings = [NSDictionary dictionaryWithObjectsAndKeys:
 				(NSString*)kCFStreamSocketSecurityLevelNegotiatedSSL, kCFStreamSSLLevel,
