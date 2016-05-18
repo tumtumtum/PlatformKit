@@ -287,7 +287,7 @@ static PKTimeSpan* MaxValue;
 {
     int64_t tempTicks = ticks - ts.ticks;
     
-    if (((ticks >> 0x3f) == (ts.ticks >> 0x3f)) && ((ticks >> 0x3f) != (tempTicks >> 0x3f)))
+    if (((ticks >> 0x3f) != (ts.ticks >> 0x3f)) && ((ticks >> 0x3f) != (tempTicks >> 0x3f)))
     {
         [NSException raise:@"TimeSpan overflow" format:@""];
     }
