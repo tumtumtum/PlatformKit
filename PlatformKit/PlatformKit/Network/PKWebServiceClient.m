@@ -149,7 +149,7 @@ static NSOperationQueue* defaultOperationQueue;
 
     if ([url.scheme caseInsensitiveCompare:@"https"] == NSOrderedSame)
     {
-		NSString* disableCertificateValidation = [[options objectForKey:@"SSL/Disable-Certificate-Chain-Validation"] stringValue];
+		NSString* disableCertificateValidation = [options objectForKey:@"SSL/Disable-Certificate-Chain-Validation"];
 
 		if ([disableCertificateValidation compare:@"true" options:NSCaseInsensitiveSearch] == NSOrderedSame)
 		{
